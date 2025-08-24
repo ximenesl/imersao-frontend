@@ -1,5 +1,6 @@
-document.getElementById("bnt-print").addEventListener(
+document.getElementById("btn-print").addEventListener(
     "click", () => {
         window.print();
     }
+
 )
