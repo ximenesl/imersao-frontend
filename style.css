@@ -71,28 +71,32 @@ body {
     font-weight: bold;                /* Deixa a bolinha mais grossa/forte */
   }
 
-#bnt-print{
-  background-color: #2b6cb0;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  font-size: 16px;
-  border-radius: 5px;
-}  
-
-  #bnt-print:hover{
-    background-color: #555;
-  }
-
+/* Contêiner do botão*/
 .button{
-  display: flex;
-  justify-content: right;
+  display: flex;                 /* Ativa layout flexível */
+  justify-content: flex-end;     /* Alinha o conteúdo à direita de forma consistente */
+  /* opcional: gap: 8px;         Espaço entre itens, se houver mais de um */
 }
 
+/* Botão de imprimir */
+#btn-print{
+  background-color: #2b6cb0;     /* Azul principal do botão */
+  color: white;                  /* Texto em branco (bom contraste) */
+  border: none;                  /* Remove borda padrão */
+  padding: 10px 20px;            /* Área clicável confortável */
+  cursor: pointer;               /* Cursor de mãozinha */
+  font-size: 16px;               /* Tamanho do texto */
+  border-radius: 5px;            /* Canto arredondado */
+}
+
+/* Estado hover */
+#btn-print:hover{
+  background-color: #555;        /* Escurece no hover para dar feedback */
+}
+
+/* Regras aplicadas apenas na impressão */
 @media print{
-  #bnt-print{
-    display: none;
-    visibility: hidden;
+  #btn-print{
+    visibility: hidden;       /* Oculta o botão na impressão */
   }
 }
