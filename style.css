@@ -97,6 +97,8 @@ body {
 /* Regras aplicadas apenas na impressão */
 @media print{
   #btn-print{
+    display: none;             /* Retira o botão na impressão */
     visibility: hidden;       /* Oculta o botão na impressão */
   }
 }
+
